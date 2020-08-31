@@ -1,0 +1,46 @@
+---
+galaxy_info:
+  role_name: etcresolvconf
+  author: sgaduuw
+  description: etcresolvconf is a role that manages the file /etc/resolv.conf on various platforms.
+  issue_tracker_url: https://github.com/sgaduuw/ansible-role-etcresolvconf/issues
+  license: MIT
+  min_ansible_version: 2.9
+
+  # Provide a list of supported platforms, and for each platform a list of versions.
+  # If you don't wish to enumerate all versions for a particular platform, use 'all'.
+  # To view available platforms and versions (or releases), visit:
+  # https://galaxy.ansible.com/api/v1/platforms/
+  #
+  platforms:
+    - name: Archlinux
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: EL
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: SLES
+      versions:
+        - all
+    - name: Amazon
+      versions:
+        - all
+
+  galaxy_tags:
+    - resolve
+    - resolver
+    - resolvconf
+    - resolving
+    - system
+    - resolv
+
+dependencies: []
