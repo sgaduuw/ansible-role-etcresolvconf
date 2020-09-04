@@ -1,4 +1,12 @@
 ---
+- name: reset state of /etc/resolv.conf
+  file:
+    path: /etc/resolv.conf
+    owner: root
+    group: root
+    mode: 0644
+    state: file
+
 - name: fill /etc/resolv.conf
   template:
     src: etc/resolv.conf.j2
