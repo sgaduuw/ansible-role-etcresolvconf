@@ -1,8 +1,13 @@
 # {{ ansible_managed }} :: {{ ansible_role_name }}
 
+{% if etcresolvconf_domain %}
 # begin domain
 domain {{ etcresolvconf_domain }}
 # end domain
+{% endif %}
+
+# begin search
+# end search
 
 # begin nameservers
 {% for server in etcresolvconf_dnsservers %}
