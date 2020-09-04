@@ -1,0 +1,7 @@
+# {{ ansible_managed }} :: {{ ansible_role_name }}
+
+# begin nameservers
+{% for server in etcresolvconf_dnsservers %}
+nameserver {{ server }}
+{% endfor %}
+# end nameservers
