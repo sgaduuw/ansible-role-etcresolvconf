@@ -4,3 +4,4 @@ etcresolvconf_dnsservers:
   - 149.112.112.112
 
 etcresolvconf_domain: Null
+etcresolvconf_search: []
