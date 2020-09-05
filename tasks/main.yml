@@ -6,6 +6,8 @@
     group: root
     mode: 0644
     state: file
+  tags:
+    - molecule-notest
 
 - name: fill /etc/resolv.conf
   template:
@@ -14,3 +16,5 @@
     owner: root
     group: root
     mode: 0644
+  tags:
+    - molecule-notest
